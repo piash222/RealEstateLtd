@@ -92,5 +92,5 @@ local_settings.py
 
 .env
 
-static/
+/static
 media/
