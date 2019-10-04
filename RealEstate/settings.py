@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'listings',
     'realtors',
+    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
