@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'RealEstate.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'realestateltd',
+        'NAME': 'realestate',
         'USER': 'postgres',
         'PASSWORD': '20539255',
         "HOST": 'localhost'
@@ -126,6 +126,15 @@ STATICFILES_DIRS = [
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# message
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+
+    messages.ERROR: 'danger'
+
+}
 
 try:
     from .local_settings import *
