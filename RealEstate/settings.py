@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '+!@n#!ws@!&g*eekm@@l&&$7s_2p#u$w_++&!c$yoj)zdrj%m7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0,1", "104.43.221.78", "realestate.centralus.cloudapp.azure.com", "www.realestate.centralus.cloudapp.azure.com"]
 
 # Application definition
 
@@ -80,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'realestate',
-        'USER': 'postgres',
-        'PASSWORD': '20539255',
+        'USER': 'piash',
+        'PASSWORD': 'test123!',
         "HOST": 'localhost'
     }
 }
